@@ -1,16 +1,16 @@
 // Global styling for this template
 
-body {
-  @include body-font;
-  padding-top: 54px;
-  padding-left: 0px;
-  color: $gray-600;
-}
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-  }
-}
+// body {
+//   @include body-font;
+//   padding-top: 54px;
+//   padding-left: 0px;
+//   color: $gray-600;
+// }
+// @media (min-width: 992px) {
+//   body {
+//     padding-top: 0;
+//   }
+// }
 
 h1,
 h2,
@@ -79,3 +79,12 @@ p.lead {
     }
   }
 }
+
+.backgroundimg {
+  background: url("/img/background.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+}
+// linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2))

@@ -8,9 +8,10 @@ section.resume-section {
     }
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   section.resume-section {
     min-height: 80vh;
+    width: 100%;
     .resume-item {
       .resume-date {
         min-width: 18rem;

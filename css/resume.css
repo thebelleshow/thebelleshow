@@ -4,19 +4,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 
-body {
-  font-family: 'Chivo', 'sans-serif';
-  padding-top: 54px;
-  padding-left: 0px;
-  color: #868e96;
-}
-
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -84,6 +71,11 @@ p.lead {
   color: #14ABE5;
 }
 
+.backgroundimg {
+  background: url("/img/background.jpeg") no-repeat center center fixed;
+  background-size: 100% 100%;
+}
+
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;
@@ -133,9 +125,10 @@ section.resume-section .resume-item .resume-date {
   min-width: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   section.resume-section {
     min-height: 80vh;
+    width: 100%;
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
