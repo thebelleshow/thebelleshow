@@ -5,7 +5,7 @@
  */
 
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Chivo', 'sans-serif';
   padding-top: 54px;
   padding-left: 0px;
   color: #868e96;
@@ -14,7 +14,6 @@ body {
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 17rem;
   }
 }
 
@@ -24,14 +23,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #343a40;
+  font-family: 'Chivo', 'sans-serif';
+  font-weight: 400;
+  text-transform: none;
+  line-height: 150%;
+  color: #fff;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 3rem;
   line-height: 5.5rem;
 }
 
@@ -50,8 +50,8 @@ p.lead {
 
 .subheading {
   text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 400;
+  font-family: 'Chivo', 'sans-serif';
   font-size: 1.5rem;
 }
 
@@ -127,7 +127,6 @@ p.lead {
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
-  max-width: 75rem;
 }
 
 section.resume-section .resume-item .resume-date {
@@ -145,9 +144,13 @@ section.resume-section .resume-item .resume-date {
 
 @media (min-width: 992px) {
   section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
   }
+}
+
+.bg-primary {
+  background-color: #14ABE5 !important;
 }
 
 .text-primary {
