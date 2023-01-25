@@ -8,7 +8,7 @@ body {
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: $sidebar-base-width;
+    padding-left: 0;
   }
 }
 
@@ -21,7 +21,7 @@ h6 {
   @include heading-font;
   font-weight: 700;
   text-transform: uppercase;
-  color: $gray-800;
+  color: $white;
 }
 
 h1 {
@@ -77,4 +77,12 @@ p.lead {
       color: $primary;
     }
   }
+}
+
+.backgroundimg {
+  background: url("/img/background.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
 }

@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Resume v5.0.8 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2021 Start Bootstrap
+ * Copyright 2013-2023 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 
@@ -13,7 +13,7 @@ body {
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 17rem;
+    padding-left: 0;
   }
 }
 
@@ -26,7 +26,7 @@ h6 {
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
   text-transform: uppercase;
-  color: #343a40;
+  color: #fff;
 }
 
 h1 {
@@ -72,7 +72,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #14ABE5;
+  background-color: #fff;
 }
 
 .dev-icons {
@@ -80,7 +80,12 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #14ABE5;
+  color: #fff;
+}
+
+.backgroundimg {
+  background: url("/img/background.jpeg") no-repeat center center fixed;
+  background-size: 100% 100%;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -90,7 +95,7 @@ p.lead {
 }
 
 #sideNav .navbar-toggler:focus {
-  outline-color: #55c5f0;
+  outline-color: white;
 }
 
 @media (min-width: 992px) {
@@ -136,7 +141,7 @@ p.lead {
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
-  max-width: 75rem;
+  max-width: 90rem;
 }
 
 section.resume-section .resume-item .resume-date {
@@ -160,17 +165,17 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #14ABE5 !important;
+  background-color: #fff !important;
 }
 
 .text-primary {
-  color: #14ABE5 !important;
+  color: #fff !important;
 }
 
 a {
-  color: #14ABE5;
+  color: #fff;
 }
 
 a:hover, a:focus, a:active {
-  color: #0e769f;
+  color: #d9d9d9;
 }
