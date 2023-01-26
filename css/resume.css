@@ -7,7 +7,7 @@
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
-  color: #868e96;
+  color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -41,6 +41,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
+  font-weight: 200;
 }
 
 p.lead {
@@ -87,6 +88,18 @@ p.lead {
 .backgroundimg {
   background: url("/img/background.jpeg") no-repeat center center fixed;
   background-size: 100% 100%;
+}
+
+.quotes {
+  background-color: #000000a1;
+}
+
+.quotes .quotesTxt {
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  width: 50rem;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {

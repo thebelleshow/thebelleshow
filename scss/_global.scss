@@ -3,7 +3,7 @@
 body {
   @include body-font;
   padding-top: 54px;
-  color: $gray-600;
+  color: $white;
 }
 @media (min-width: 992px) {
   body {
@@ -36,6 +36,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
+  font-weight: 200;
 }
 
 p.lead {
@@ -86,4 +87,14 @@ p.lead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: 100% 100%;
+}
+.quotes {
+  background-color:#000000a1;
+  .quotesTxt {
+    justify-content: center; 
+    display: flex; 
+    padding: 10px; 
+    flex-direction: column;
+    width: 50rem;
+  }
 }
