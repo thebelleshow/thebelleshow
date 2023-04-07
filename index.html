@@ -18,11 +18,12 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
-  <link rel="icon" href="img/profile.jpg">
+  <link rel="icon" href="img/footer.jpg">
 
   
 </head>
-<body id="page-top">
+
+<body>
   <div class="container-fluid p-0">
     <section class="backgroundimg resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
@@ -32,6 +33,7 @@
         <p class="lead mb-5">Hi, my name is Brandon Belle and I am a Global Procurement specialist. As a proven business professional, I specialize in many core areas of business operations ranging from Global Procurement, Logistics, Project Management, etc. Throughout my service in the United States Marine Corps, I have had the honor and privilege of working with a number of service members gaining qualities like leadership skills, teamwork, communication, etc. In my free time, you can catch me traveling to different cities across the globe, relaxing with family, and exercising under the sunset. </p>
       </div>
     </section>
+    
     <hr class="m-0">
 
     <section class="quotes p-3 p-lg-5 d-flex justify-content-center" id="education">
@@ -144,42 +146,24 @@
 
     <hr class="m-0">
 
-    <section class="p-3 p-lg-5" id="Projects" style="background-color: #495cbab8;">
-      <div>
-        <h2 style="font-weight:bolder">Get In Touch</h2>
-        <h5>Don’t hesitate to put time on my calendar below, </h5>
-         <h5>or send a message using the form.</h5>
-        <div class="social-icons">
-          <a href = "http://calendly.com/brandon-belle" class="fa fa-calendar"target="_blank"></a>
-          <img src="img/contact.jpg" class="img2 img imgContact">   
-        </div>        
-            <form id="fcf-form-id" method="post" action="https://formspree.io/f/mzbqdpnp">
-              <div>
-                  <label>Name</label>
-                  <div>
-                      <input type="text" id="Name"size="40px" name="Name" required>
-                  </div>
-              </div>
-              
-
-              <div>
-                  <label for="Email" style="font-weight:bold">Email Address (Required)</label>
-                  <div style="padding-bottom: 2rem;">
-                      <input type="email" id="Email" size="40px"name="Email" required>
-                  </div>
-              </div>
-  
-              <div>
-                  <label for="Message" style="font-weight:bold">Add a Message...</label>
-                  <div style="padding-bottom: 2rem;">
-                      <textarea class = "textarea"id="Message" name="Message" rows="8" cols="30"maxlength="3000" required></textarea>
-                  </div>
-              </div>
-  
-              <div>
-                  <button type="submit">Submit Message</button>
-              </div>
-            </form>
+    <section>
+      <div class="contact-wrapper">
+        <div class="contact-image">
+          <img src="img/contact.jpg" alt="Your Image">
+        </div>
+        <div class="contact-form">
+          <h2>Get in Touch</h2>
+          <p>Don't hesitate to put time on my calendar below, or send a message using the form.</p>
+          <div class="social-icons">
+            <a href = "http://calendly.com/brandon-belle" class="fa fa-calendar"target="_blank"></a>
+          </div>  
+          <form id="contact" method="post" action="#">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </div>
     </section>
 
