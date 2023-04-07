@@ -1,16 +1,16 @@
 // Global styling for this template
 
-body {
-  @include body-font;
-  padding-top: 54px;
-  color: $white;
-}
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: 0;
-  }
-}
+// body {
+//   @include body-font;
+//   padding-top: 54px;
+//   padding-left: 0px;
+//   color: $gray-600;
+// }
+// @media (min-width: 992px) {
+//   body {
+//     padding-top: 0;
+//   }
+// }
 
 h1,
 h2,
@@ -19,15 +19,15 @@ h4,
 h5,
 h6 {
   @include heading-font;
-  font-weight: 700;
-  text-transform:none;
-  color: $white;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 150%;
+  color: #fff;
 }
 
 h1 {
   font-size: 3rem;
   line-height: 5.5rem;
-  text-align: center;
 }
 
 h2 {
@@ -36,10 +36,6 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  font-weight: 200;
-}
-h4 {
-  font-weight: 200;
 }
 
 p.lead {
@@ -66,7 +62,6 @@ p.lead {
     font-size: 1.5rem;
     line-height: 3.5rem;
     margin-right: 1rem;
-    margin-bottom: 2rem;
     &:last-child {
       margin-right: 0;
     }
@@ -85,200 +80,11 @@ p.lead {
   }
 }
 
-@media (max-width: 576px) {
-  .resume-section h1 {
-    font-size: 3rem;
-    margin-top: 0;
-  }
-}
 .backgroundimg {
-  background: url("/img/background.jpeg") center center no-repeat;
+  background: url("/img/background.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  height: 500px;
+  background-size: 100% 100%;
 }
-.quotes {
-  background-color:#000000a1;
-  .quotesTxt {
-    justify-content: center; 
-    display: flex; 
-    padding: 40px; 
-    flex-direction: column;
-    max-width: 70%;
-  }
-}
-.mainBackground {
-  background-color:#495cbab8;
-  .aboutMe {
-    padding-top: 50px; 
-    padding-right: 15px;
-  }
-}
-.img {
-  width: 450px;
-  height: 550px;
-  border-radius: 50%;
-  float: left;
-  margin-right: 30px;
-}
-@media (max-width: 480px) {
-  .img{
-    width: 100px;
-    height: 250px;
-    float:left;
-  }
-  .imgContact{
-    width: 150px;
-    height: 150px;
-  }
-}
-@media (max-width: 480px) {
-  .textImage{
-  flex-direction: column;
-  justify-content: center;
-  text-align: center justify;
-  margin-left: auto;
-  max-width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .aboutMeMobile{
-    flex-direction: column;
-    padding-top: 50px; 
-  }
-}
-
-@media (max-width: 480px) {
-  input[type=text], select {
-    size: 20px;
-  }
-
-  input[type=email] {
-    left: 100px;
-    width: 150px;
-  }
-  label{
-    right: 100px;
-    top:200px;
-  }
-  // button[type=submit] {
-  //   position: relative;
-  //   top:100px;
-  //   right: 400px;
-  // }
-  .textarea {
-    cols:"30"
-  }
-}
-@media (max-width: 480px) {
-  .img2{
-    width: 200px;
-    height: 350px;
-    float:left;
-  }
-}
-
-.contact-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  background-color: #495cbab8;
-}
-
-.contact-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-  margin-left: 5rem;
-}
-
-.contact-form {
-  padding: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin-left: 7rem;
-}
-@media (max-width: 768px) {
-  .contact-form {
-    margin-left: 0;
-  }
-}
-@media (max-width: 768px) {
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-    background-color: #495cbab8;
-  }
-
-  .contact-image {
-    order: 0;
-    margin-bottom: 10px;
-  }
-  .contact-image img {
-    margin-left: 0;
-    max-width: 50%;
-    margin-top: 10px;
-  }
-
-  .contact-form {
-    padding: 40px;
-    width: 100%;
-  }
-}
-
-#contact h2 {
-  font-size: 2.5rem;
-  margin-top: 0;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-
-@media (max-width: 768px) {
-  #contact h2 {
-    font-size: 2rem;
-  }
-}
-
-#contact input,
-#contact select,
-#contact textarea {
-  padding: 20px;
-  border-radius: 0;
-  font-size: 1rem;
-  font-weight: 400;
-  border: 1px solid #ced4da;
-  margin-bottom: 30px;
-  width: 100%;
-}
-
-#contact input:focus,
-#contact select:focus,
-#contact textarea:focus {
-  border-color: #007bff;
-}
-
-#contact textarea {
-  display: block;
-  width: 100%;
-  margin-top: 5px;
-}
-
-#contact button[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-  border: 0;
-  border-radius: 0;
-  padding: 15px 30px;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 700;
-}
+// linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2))
