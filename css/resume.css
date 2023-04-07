@@ -16,7 +16,6 @@ body {
     padding-left: 0;
   }
 }
-
 h1,
 h2,
 h3,
@@ -30,7 +29,7 @@ h6 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 3rem;
   line-height: 5.5rem;
   text-align: center;
 }
@@ -348,7 +347,7 @@ section.resume-section .resume-item .resume-date {
   min-width: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   section.resume-section {
     min-height: 100vh;
     padding-top: 20rem;
@@ -360,8 +359,8 @@ section.resume-section .resume-item .resume-date {
 
 @media (min-width: 992px) {
   section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
   }
 }
 
