@@ -25,7 +25,7 @@ h6 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   line-height: 5.5rem;
   text-align: center;
 }
@@ -43,8 +43,38 @@ h4 {
 }
 
 p.lead {
-  font-size: 1.15rem;
-  font-weight: 400;
+  @include heading-font;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  p.lead {
+    @include heading-font;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainBackground {
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+  }
+  .img {
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+    float: none;
+    display: block;
+    border-radius: 0;
+  }
+  .aboutMe {
+    padding: 0;
+    text-align: center;
+  }
+  .textImage {
+    text-align: justify;
+  }
 }
 
 .subheading {
@@ -106,9 +136,22 @@ p.lead {
     display: flex; 
     padding: 40px; 
     flex-direction: column;
-    max-width: 70%;
+    max-width: 80%;
   }
 }
+@media (max-width: 480px) {
+  .quotes {
+    background-color:#000000a1;
+    .quotesTxt {
+      justify-content: center; 
+      display: flex; 
+      padding: 40px; 
+      flex-direction: column;
+      max-width: 100%;
+    }
+  }
+}
+
 .mainBackground {
   background-color:#495cbab8;
   .aboutMe {
