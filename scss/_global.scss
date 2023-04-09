@@ -1,16 +1,16 @@
 // Global styling for this template
 
-// body {
-//   @include body-font;
-//   padding-top: 54px;
-//   padding-left: 0px;
-//   color: $gray-600;
-// }
-// @media (min-width: 992px) {
-//   body {
-//     padding-top: 0;
-//   }
-// }
+body {
+  @include body-font;
+  padding-top: 54px;
+  color: $white;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 0;
+  }
+}
 
 h1,
 h2,
@@ -19,15 +19,15 @@ h4,
 h5,
 h6 {
   @include heading-font;
-  font-weight: 400;
-  text-transform: none;
-  line-height: 150%;
-  color: #fff;
+  font-weight: 700;
+  text-transform:none;
+  color: $white;
 }
 
 h1 {
   font-size: 5rem;
   line-height: 5.5rem;
+  text-align: center;
 }
 
 h2 {
@@ -36,6 +36,10 @@ h2 {
 
 h3 {
   font-size: 2rem;
+  font-weight: 200;
+}
+h4 {
+  font-weight: 200;
 }
 
 p.lead {
@@ -93,6 +97,7 @@ p.lead {
     font-size: 1.5rem;
     line-height: 3.5rem;
     margin-right: 1rem;
+    margin-bottom: 2rem;
     &:last-child {
       margin-right: 0;
     }
@@ -114,8 +119,14 @@ p.lead {
   }
 }
 
+@media (max-width: 576px) {
+  .resume-section h1 {
+    font-size: 3rem;
+    margin-top: 0;
+  }
+}
 .backgroundimg {
-  background: url("/img/background.jpeg") no-repeat center center fixed;
+  background: url("/img/background.jpeg") center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -23,16 +23,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Chivo', 'sans-serif';
-  font-weight: 400;
+  font-family: 'Chivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
   text-transform: none;
-  line-height: 150%;
   color: #fff;
 }
 
 h1 {
   font-size: 5rem;
   line-height: 5.5rem;
+  text-align: center;
 }
 
 h2 {
@@ -41,6 +41,11 @@ h2 {
 
 h3 {
   font-size: 2rem;
+  font-weight: 200;
+}
+
+h4 {
+  font-weight: 200;
 }
 
 p.lead {
@@ -98,6 +103,7 @@ p.lead {
   font-size: 1.5rem;
   line-height: 3.5rem;
   margin-right: 1rem;
+  margin-bottom: 2rem;
 }
 
 .social-icons a:last-child {
@@ -105,7 +111,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #14ABE5;
+  background-color: #fff;
 }
 
 .footer-icons {
@@ -117,7 +123,14 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #14ABE5;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .resume-section h1 {
+    font-size: 3rem;
+    margin-top: 0;
+  }
 }
 
 .backgroundimg {
@@ -469,6 +482,7 @@ p.lead {
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
+  max-width: 90rem;
 }
 
 section.resume-section .resume-item .resume-date {
@@ -477,8 +491,8 @@ section.resume-section .resume-item .resume-date {
 
 @media (min-width: 992px) {
   section.resume-section {
-    min-height: 80vh;
-    width: 100%;
+    min-height: 100vh;
+    padding-top: 20rem;
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
@@ -493,17 +507,17 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #14ABE5 !important;
+  background-color: #fff !important;
 }
 
 .text-primary {
-  color: #14ABE5 !important;
+  color: #fff !important;
 }
 
 a {
-  color: #14ABE5;
+  color: #fff;
 }
 
 a:hover, a:focus, a:active {
-  color: #0e769f;
+  color: #d9d9d9;
 }
